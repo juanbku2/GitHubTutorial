@@ -1,2 +1,8 @@
 Git Tutorial
 
+git status
+git remote -v (know which repository you are in)
+
+git remote add origin https://github.com/juanbku2/GitHubTutorial.git (to link the local repository with the remote)
+
+git push origin master (to update the remote rempostory)
