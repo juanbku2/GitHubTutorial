@@ -6,3 +6,15 @@ git remote -v (know which repository you are in)
 git remote add origin https://github.com/juanbku2/GitHubTutorial.git (to link the local repository with the remote)
 
 git push origin master (to update the remote rempostory)
+
+----steps to update a repository---
+1. git add . (to add all new files) or git add filename
+2. git commit -m "message of the commit"
+3. git push origin master
+----
+git diff --staged   // type "Q" to exit
+
+
+----Restore---
+git restore filename
+---
