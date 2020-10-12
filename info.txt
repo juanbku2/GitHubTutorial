@@ -1,20 +1,81 @@
 Git Tutorial
 
+---most used commands---
+
+git clone urlOfTheRepo
+
+git pull origin master (make this whenever you start to work to update your repository)
+
+git checkout nameOfTheBranch
+git add . // git add fileName
+git commit -a -m "comments"
+git stash (to save like a backup)
+git stash list
+git stash show
+
 git status
+git log //git log --oneline // git log -1 // git log -2 // git log --stat // git log --patch
+git log --oneline --graph --decorate -all 
+
+
+
+
+
+----how to get and configure some attributes---
+
+git config --list (to see the config)
+git config --global user.name "YourName" (change the name which be displayed on the commit event)
+git config --glbal user.email "YourEmail" (change the name which be displayed on the commit event)
+
+---how to init a new repository----
+
+1. git init
+2. git add .
+3. git commit -m "message of the commit"
+
+---how to link and update a remote repository---
+
 git remote -v (know which repository you are in)
-
 git remote add origin https://github.com/juanbku2/GitHubTutorial.git (to link the local repository with the remote)
-
 git push origin master (to update the remote rempostory)
 
 ----steps to update a repository---
+
 1. git add . (to add all new files) or git add filename
 2. git commit -m "message of the commit"
 3. git push origin master
+
 ----
 git diff --staged   // type "Q" to exit
 
 
 ----Restore---
 git restore filename
----
+
+--- Visualizing branch 
+
+git checkout -b new_branch (create new branch)
+git checkout master (move to the master branch)
+git checkout nameOfTheBranch
+
+--- Delete files from git ---
+
+git rm filename (remove file)
+git rm --cached filename (remove from the index)
+
+--- rename fileName---
+
+git mv actualName.test newName.test
+
+--- merge ---
+git merge branchName
+
+--- git tags ---
+
+git tag NameOfTheTag master (create the tag on the current Version of git)
+git tag -a v0.1 -m "0.1 release" c955a85a (gitRegsitry)
+git push --tags (to update the tags)
+git tag -d "NameOfTheTag"
+git push origin :v0.1
+
+--- creating issues ---
